@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerAddData">
+  <tabs>
+      <Tab text="Головна Таблиця">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="605.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="26.0" prefHeight="33.0" prefWidth="548.0" text="Введіть всі данні продукта, а потім нажміть кнопку &quot;ДОДАТИ&quot;" />
+                  <TextField fx:id="nameEditorMainTable" layoutX="30.0" layoutY="70.0" prefHeight="30.0" prefWidth="180.0" promptText="Назва продукта" />
+                  <TextField fx:id="infoEditorMainTable" layoutX="30.0" layoutY="110.0" prefHeight="30.0" prefWidth="180.0" promptText="Інформація про продукта" />
+                  <TextField fx:id="usingEditorMainTable" layoutX="30.0" layoutY="150.0" prefHeight="30.0" prefWidth="180.0" promptText="Використання" />
+                  <TextField fx:id="priceEditorMainTable" layoutX="30.0" layoutY="190.0" prefHeight="30.0" prefWidth="180.0" promptText="Ціна" />
+                  <TextField fx:id="kindEditorMainTable" layoutX="220.0" layoutY="70.0" prefHeight="30.0" prefWidth="180.0" promptText="Тип продукта" />
+                  <TextField fx:id="targetEditorMainTable" layoutX="220.0" layoutY="110.0" prefHeight="30.0" prefWidth="180.0" promptText="Ціль використання" />
+                  <TextField fx:id="packingEditorMainTable" layoutX="220.0" layoutY="150.0" prefHeight="30.0" prefWidth="180.0" promptText="Тип фасування" />
+                  <TextField fx:id="weightEditorMainTable" layoutX="220.0" layoutY="190.0" prefHeight="30.0" prefWidth="180.0" promptText="Вага" />
+                  <TextField fx:id="firmEditorMainTable" layoutX="410.0" layoutY="70.0" prefHeight="30.0" prefWidth="180.0" promptText="Фірма виробника" />
+                  <TextField fx:id="countryEditorMainTable" layoutX="410.0" layoutY="110.0" prefHeight="30.0" prefWidth="180.0" promptText="Країна виробника" />
+                  <TextField fx:id="ratingEditorMainTable" layoutX="410.0" layoutY="150.0" prefHeight="30.0" prefWidth="180.0" promptText="Рейтинг виробника" />
+                  <Button fx:id="buttonMainTable" layoutX="30.0" layoutY="230.0" mnemonicParsing="false" prefHeight="110.0" prefWidth="560.0" text="ДОДАТИ" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Виробники">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="firmEditorProducer" layoutX="20.0" layoutY="70.0" prefHeight="40.0" prefWidth="560.0" promptText="Фірма виробника" />
+                  <Label layoutX="20.0" layoutY="20.0" prefHeight="30.0" prefWidth="550.0" text="Введіть дані про виробника, а потім нажміть кнопку &quot;ДОДАТИ&quot;" />
+                  <TextField fx:id="countryEditorProducer" layoutX="20.0" layoutY="120.0" prefHeight="40.0" prefWidth="560.0" promptText="Країна виробника" />
+                  <TextField fx:id="ratingEditorProducer" layoutX="20.0" layoutY="170.0" prefHeight="40.0" prefWidth="560.0" promptText="Рейтинг виробника" />
+                  <Button fx:id="buttonProducer" layoutX="20.0" layoutY="220.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="560.0" text="ДОДАТИ" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Фасування">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="21.0" layoutY="13.0" prefHeight="33.0" prefWidth="569.0" text="Введіть, як розфасований продукт, а потім нажміть кнопку &quot;ДОДАТИ&quot;" />
+                  <TextField fx:id="packingEditorPacking" layoutX="20.0" layoutY="70.0" prefHeight="40.0" prefWidth="550.0" promptText="Тип фасування" />
+                  <TextField fx:id="weightEditorPacking" layoutX="20.0" layoutY="120.0" prefHeight="40.0" prefWidth="550.0" promptText="Вага" />
+                  <Button fx:id="buttonPacking" layoutX="20.0" layoutY="170.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="550.0" text="ДОДАТИ" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Тип продукта">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="kindEditorKind" layoutX="20.0" layoutY="70.0" prefHeight="40.0" prefWidth="550.0" promptText="Тип продукта" />
+                  <Label layoutX="18.0" layoutY="9.0" prefHeight="42.0" prefWidth="564.0" text="Введіть тип продукта, а потім нажміть кнопку &quot;ДОДАТИ&quot;" />
+                  <Button fx:id="buttonKind" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="550.0" text="ДОДАТИ" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Ціль використання">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="358.0" prefWidth="600.0">
+               <children>
+                  <TextField fx:id="targetEditorTarget" layoutX="20.0" layoutY="70.0" prefHeight="40.0" prefWidth="550.0" promptText="Ціль використання" />
+                  <Label layoutX="23.0" layoutY="16.0" prefHeight="43.0" prefWidth="553.0" text="Введіть ціль використання продукта, а потім нажміть кнопку &quot;ДОДАТИ&quot;" />
+                  <Button fx:id="buttonTarget" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="550.0" text="ДОДАТИ" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
